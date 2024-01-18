@@ -10,7 +10,7 @@ import com.jsomven.pokedex.R
 @Composable
 fun PokemonImageNotFound(modifier: Modifier) {
     Image(
-        painter = painterResource(id = R.drawable.poke_egg),
+        painter = painterResource(id = R.drawable.unkwon),
         contentDescription = stringResource(id = R.string.pokemon_not_found),
         modifier = modifier
     )
