@@ -39,10 +39,12 @@ fun PokemonDetail(
             eggGroups = pokemon.eggGroups
         )
 
-        PokemonDetailsButtons(
-            onEvolutionChainClick = onEvolutionChainClick,
-            onAbilitiesClick = onAbilitiesClick
-        )
+        if (pokemon.id > 0){
+            PokemonDetailsButtons(
+                onEvolutionChainClick = onEvolutionChainClick,
+                onAbilitiesClick = onAbilitiesClick
+            )
+        }
 
         Spacer(
             modifier = Modifier
